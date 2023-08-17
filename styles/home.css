@@ -1,0 +1,43 @@
+@import url('./generic.css');
+@import url('./qna.css');
+
+.picture-carousel {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+}
+
+.picture-carousel>.img-carousel {
+    min-height: 30em;
+    min-width: 100vw;
+    overflow: hidden;
+    background: linear-gradient(#231f20b7, #ffffff00), var(--src);
+    background-blend-mode: none;
+    background-size: cover;
+    scroll-snap-align: start;
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel-container>.title-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-container>.title-container .txt-big {
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.carousel-container>.title-container .txt-sub {
+    color: var(--white);
+    font-style: italic;
+    font-variant: small-caps;
+}

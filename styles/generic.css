@@ -1,0 +1,104 @@
+@import url(https://fonts.bunny.net/css?family=actor:400|dm-sans:400,400i,700,700i);
+@import url('../assets/pictures/ui/css-icons.css');
+@import url('./generic_desktop.css');
+@import url('./generic_mobile.css');
+@import url('./animations_generic.css');
+
+/*Palette https://coolors.co/231f20-bb4430-f\3dfa2-efe6dd */
+:root {
+    --black: #231f20;
+    --red: #BB4430;
+    --blue: #7ac2d6;
+    --yellow: #f3dfa2;
+    --white: #efe6dd;
+    --headerHeight: 3rem;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    container-type: inline-size;
+    container-name: body;
+}
+
+* {
+    font-family: 'Actor';
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--white);
+    min-height: var(--headerHeight);
+    display: flex;
+}
+
+header>.logo {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    margin: .35rem .45rem 0rem 0.25rem;
+    padding: .25rem;
+}
+
+.header-list {
+    display: flex;
+    overflow: visible;
+}
+
+.header-link {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 1.25em;
+    cursor: pointer;
+    min-width: 12.34rem;
+    min-height: var(--headerHeight);
+    padding: 0px .25rem 0px 1rem;
+    line-height: var(--headerHeight);
+    text-decoration: none;
+    color: black;
+}
+
+.header-link:visited {
+    color: black;
+}
+
+.header-link:hover,
+.header-link:active,
+.header-hamburger:active,
+.header-hamburger:hover {
+    transition: color 120ms, font-weight 120ms, background-color 200ms;
+    text-decoration: underline;
+    animation: header-link-underline 120ms;
+    text-decoration-thickness: .15em;
+    font-weight: 700;
+    color: white;
+    background-color: var(--red);
+}
+
+.main-content>iframe {
+    border: none;
+}
+
+.txt-big {
+    font-family: 'DM Sans';
+    font-size: 3em;
+}
+
+.txt-sub {
+    font-family: 'DM Sans';
+    font-size: 1.5em;
+}
+
+div.main-content>iframe {
+    width: 100%;
+}
+
+div.spacer {
+    flex-grow: 1;
+}
+
+.txt-centered {
+    text-align: center;
+}

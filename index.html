@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Mario Rossi">
+        <meta name="keywords" content="Mario, Rossi, mariorossi, mariorossi@gmail.com, mario">
+        <meta name="author" content="Mario Rossi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/index.css">
+        <script type="text/javascript" src="./assets/scripts/mobile.js" defer></script>
+        <script type="text/javascript" src="./assets/scripts/navigation.js" defer></script>
+        <title>Mario Rossi</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="./assets/pictures/ui/logo.png"></img>
+            <div class="spacer"></div>
+            <div class="header-list" id="headerLinkList">
+                <a class="header-link" onclick="navigateTo(this)" href="subpages/home.html" target="navigator">Home</a>
+                <a class="header-link" onclick="navigateTo(this)" href="subpages/about.html" target="navigator">Chi sono</a>
+                <a class="header-link" onclick="navigateTo(this)" href="subpages/where.html" target="navigator">Dove sono</a>
+                <a class="header-link" onclick="navigateTo(this)" href="subpages/links.html" target="navigator">Collegamenti</a>
+            </div>
+            <div class="header-hamburger" id="mobileMenu">
+                <i class="gg-menu"></i>
+            </div>
+        </header>
+        <div class="main-content">
+            <iframe id="navigator" name="navigator" onload="onloadedpage(this)"></iframe>
+        </div>
+        <footer>
+
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+@keyframes header-link-underline {
+    0% {
+        text-decoration-thickness: 0px;
+    }
+
+    100% {
+        text-decoration-thickness: .15em;
+    }
+}
