@@ -21,7 +21,7 @@ function onFirstLoad () {
     if (Number(window.currentPage) > 0) return;
     let params = new URLSearchParams(window.location.search);
     let page = params.get("page") ?? 'home';
-    document.querySelector('#navigator').setAttribute('src', `subpages/${page}`);
+    document.querySelector('#navigator').setAttribute('src', `subpages/${page}.html`);
 }
 
 function scrollHeader () {
