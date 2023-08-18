@@ -80,12 +80,5 @@
     display: block;
     max-width: 20rem;
     font-size: 1.25rem;
-}
-
-.question .txt-answer::before {
-    content: '“';
-}
-
-.question .txt-answer::after {
-    content: '”';
+    padding: .4rem;
 }
