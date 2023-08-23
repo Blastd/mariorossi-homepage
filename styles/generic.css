@@ -1,8 +1,12 @@
-@import url(https://fonts.bunny.net/css?family=actor:400|dm-sans:400,400i,700,700i);
+@import url(https://fonts.bunny.net/css?family=actor:400|dm-sans:400,400i,700,700i&display=swap);
 @import url('../assets/pictures/ui/css-icons.css');
 @import url('./generic_desktop.css');
 @import url('./generic_mobile.css');
 @import url('./animations_generic.css');
+
+* {
+    all: none;
+}
 
 /*Palette https://coolors.co/231f20-bb4430-f\3dfa2-efe6dd */
 :root {
