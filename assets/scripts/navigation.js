@@ -20,7 +20,7 @@ function navigateTo (obj) {
 function onFirstLoad () {
     if (Number(window.currentPage) > 0) return;
     let params = new URLSearchParams(window.location.search);
-    let page = params.get("page") ?? 'home';
+    let page = params.get("page") || 'home';
     document.querySelector('#navigator').setAttribute('src', `subpages/${page}.html`);
 }
 
